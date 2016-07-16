@@ -32,7 +32,23 @@ Just for fun I chose to use [lowdb](https://github.com/typicode/lowdb) so I don'
 
 So if you want to update your db or add a new routes you can do it adding a json file in the `db` directory.
 
-The routes names are the name of the dbs present on the `db` directory so for example, if you have a `stocazzo.json` file you will have a route called `/stocazzo`.
+The routes names are the name of the dbs present on the `db` directory so for example, if you have a `stocazzo.txt.json` file you will have a route called `/stocazzo`.
+
+## Finder
+Now you can find values using a key/value parameter; do you want to find shape_id "1010" in the shapes dataset ?   
+You can:
+```sh
+curl 127.0.0.1:3000/shapes/shape_id/1010
+```
+
+
+## Example
+
+Do you want to find stops that has wheelchair on board ?
+
+```sh
+cul 127.0.0.1:3000/stops/wheelchair_boarding/1
+```
 
 ## Author
 

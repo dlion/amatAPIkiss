@@ -39,5 +39,23 @@ server.get('/:name', (req, res, next) => {
   next()
 })
 
+// Find through key:value
+server.get('/:name/:key/:value', (req, res, next) => {
+  const name = req.params.name.toString().toLowerCase()
+  if (DBS.hasOwnProperty(name)) {
+    const key = req.params.key.toString().toLowerCase()
+    const value = req.params.value.toString()
+    const ris = DBS[name].get(name).filter({ [key]: value }).value()
+    if (!ris) {
+      res.json(404, { message: `${key}:${value} not found in the dataset` })
+    } else {
+      res.json(201, ris)
+    }
+  } else {
+    res.json(404, new Error('Routes not found'))
+  }
+  next()
+})
+
 // Start
 server.listen(3000, () => console.log('%s listening at %s', server.name, server.url))
