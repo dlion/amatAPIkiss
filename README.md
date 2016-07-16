@@ -1,6 +1,6 @@
 # Amat API Kiss
 
-### I made this just for fun, don't use in production
+### I made this just for fun, don't use it in production
 
 ## Install
 
@@ -21,7 +21,7 @@ node convert.js
 ## Run
 
 ```
-npm start
+node index.js
 ```
 
 The sever will be started on `127.0.0.1:3000`
