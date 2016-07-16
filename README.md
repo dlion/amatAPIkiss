@@ -24,7 +24,7 @@ node convert.js
 npm start
 ```
 
-The sever will be started on the `127.0.0.1:3000`
+The sever will be started on `127.0.0.1:3000`
 
 ## Peculiarity
 

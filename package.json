@@ -1,0 +1,29 @@
+{
+  "name": "amatapikiss",
+  "version": "1.0.0",
+  "description": "Amat API Kiss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "amat",
+    "api",
+    "palermo",
+    "opendata",
+    "kiss"
+  ],
+  "author": "Domenico Luciani <domenicoleoneluciani@gmail.com> (https://domenicoluciani.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlion/amatapikiss/issues"
+  },
+  "homepage": "https://github.com/dlion/amatapikiss",
+  "devDependencies": {},
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "lowdb": "^0.13.1",
+    "csvjson": "^2.0.2",
+    "restify": "^4.1.1"
+  }
+}
