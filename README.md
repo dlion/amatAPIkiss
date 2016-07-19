@@ -47,7 +47,7 @@ curl 127.0.0.1:3000/shapes/shape_id/1010
 Do you want to find stops that has wheelchair on board ?
 
 ```sh
-cul 127.0.0.1:3000/stops/wheelchair_boarding/1
+curl 127.0.0.1:3000/stops/wheelchair_boarding/1
 ```
 
 ## Author
